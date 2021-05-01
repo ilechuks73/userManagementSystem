@@ -1,0 +1,9 @@
+.home_page{
+  height: 100vh;
+}
+
+.home_page button{
+  width: max-content;
+  border: none;
+  border-radius: 5px;
+}

@@ -1,0 +1,32 @@
+.register_page{
+  height: 100vh;
+}
+
+.register_form{
+  height: 100%;
+}
+
+.form_submit{
+  margin: auto;
+  width: 100px;
+  background-color: none;
+}
+
+input, select{
+  background-color: rgba(245, 222, 179, 0);
+  border: none;
+  border-bottom: 2px solid grey;
+}
+
+select,input{
+  outline : none;
+}
+
+.blue{
+  background-color: rgb(201, 201, 201);
+}
+
+.red{
+  background-color: red;
+}
+

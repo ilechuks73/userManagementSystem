@@ -1,0 +1,14 @@
+/server/.env
+/server/node_modules
+/server/routes.rest
+
+# dependencies
+/client/node_modules
+
+# production
+/client/build
+
+# misc
+/client/.env.*
+/client/.vscode
+

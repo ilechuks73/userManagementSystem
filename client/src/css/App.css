@@ -1,0 +1,29 @@
+*{
+  margin: 0;
+  padding:0;
+  text-decoration: none;
+  box-sizing: border-box;
+}
+
+.h100{
+  height: 100%;
+}
+.h-100vh{
+  min-height: 100vh;
+}
+
+.p-absolute{
+  position: absolute
+}
+
+.p-fixed{
+  position: fixed;
+}
+
+.btn{
+  padding: 2px 5px;
+  border-radius: 3px;
+  background-color: rgb(163, 163, 163);
+  border: none;
+  text-decoration: none;
+}

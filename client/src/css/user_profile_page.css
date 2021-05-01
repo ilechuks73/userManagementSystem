@@ -1,0 +1,38 @@
+.userprofile_page{
+  width: 100vw;
+  height: 100vh;
+}
+
+.section1{
+  background-color: thistle;
+}
+
+.userprofile_page .avatar_img{
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+
+
+.userprofile_page .name_heading{
+  text-transform: capitalize;
+  font-weight: bold;
+}
+.userprofile_page .about_heading{
+  font-weight: bold;
+  width: max-content;
+  border-bottom: 2px solid brown;
+}
+.userprofile_page table{
+  margin-bottom: 20px;
+}
+.userprofile_page td{
+  padding-top: 15px;
+  padding-right: 20px
+}
+
+.userprofile_page td:nth-child(2){
+  font-weight: bold;
+  color: rgb(0, 72, 255);
+}
+
