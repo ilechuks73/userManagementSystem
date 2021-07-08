@@ -1,6 +1,18 @@
+#SERVER
+
+#environment variables
 /server/.env
+
+# dependencies
 /server/node_modules
+
+#misc
 /server/routes.rest
+/server/.vscode
+
+
+
+#CLIENT
 
 # dependencies
 /client/node_modules
@@ -8,7 +20,9 @@
 # production
 /client/build
 
-# misc
+#environment variables
 /client/.env.*
+
+#misc
 /client/.vscode
 

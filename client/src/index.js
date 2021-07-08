@@ -5,7 +5,7 @@ import { BrowserRouter } from "react-router-dom";
 import "./css/bootstrap-grid.min.css";
 import "./css/bootstrap-reboot.min.css";
 
-import App from "./App";
+import {App} from "./App";
 
 import { Store } from "./contexts/global_context";
 import { ComponentStore } from "./contexts/component_context";

@@ -1,0 +1,48 @@
+.adminprofile_page {
+ height: 100vh;
+}
+
+.adminprofile_page .avatar_img {
+ border-radius: 50%;
+ overflow: hidden;
+}
+
+.psm-item {
+ text-decoration: none;
+ list-style: none;
+ color: white;
+ font-weight: bold;
+ font-size: 18px;
+ text-align: center;
+ background-color: teal;
+ margin-bottom: 2px;
+}
+
+.adminprofile_page .profile_dashboard {
+ height: 100vh;
+ padding-left: 80px;
+ padding-top: 80px;
+}
+
+/* .adminprofile_page .profile_dashboard #overview{
+  background-color: cadetblue;
+} */
+
+.adminprofile_page .profile_dashboard .card {
+ height: 100px;
+ width: 200px;
+ border-radius: 5px;
+}
+
+
+.relative {
+ position: relative !important;
+}
+
+.red {
+ background-color: red;
+}
+
+.blue {
+ background-color: blue;
+}
