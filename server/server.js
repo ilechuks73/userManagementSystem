@@ -1,17 +1,17 @@
-require('dotenv').config()
+const dotenv = require('dotenv')
 const express = require('express')
-const app = express()
-const mongoose = require('mongoose')
 const cors = require('cors')
+const app = express()
 
-mongoose.connect(process.env.DATABASE_URL , { useUnifiedTopology: true , useNewUrlParser: true} )
 
-const db = mongoose.connection
-
-db.on('error', (error)=>{console.log(error)})
-db.once('open', ()=>{
-  console.log('connected to db')
+const mongodb = require('./helpers/mongodb_connection')
+mongodb( async (client)=>{ 
+  const test = await client.db('usermanagementsysdb').collection('activities').findOne({})
+  console.log(test)
+  
 })
+
+dotenv.config()
 
 
 //MIDDLE WARES
@@ -35,3 +35,6 @@ app.get('/', (req, res)=>{
 app.listen( process.env.PORT , ()=>{
   console.log(`server started on http://localhost:${process.env.PORT}`) 
 })
+
+
+
