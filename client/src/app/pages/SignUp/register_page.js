@@ -2,8 +2,8 @@ import React, { useContext, useEffect, useState } from "react";
 import { Link, useHistory } from "react-router-dom";
 import "../css/register_page.css";
 
-import { register_user, post_activity } from "../api_request";
-import { ComponentContext } from "../contexts/component_context";
+import { register_user, post_activity } from "../../helpers/api_request";
+import { ComponentContext } from "../../contexts/component_context";
 
 //------MATERIAL UI 
 import Select from "@material-ui/core/Select";

@@ -26,3 +26,7 @@
 #misc
 /client/.vscode
 
+#VS-CODE
+
+#workspaces
+client.code-workspace

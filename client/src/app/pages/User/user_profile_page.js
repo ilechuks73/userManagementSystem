@@ -1,10 +1,10 @@
 import React from "react";
 import { useHistory } from "react-router-dom";
 
-import { delete_profile_data, post_activity } from "../api_request";
+import { delete_profile_data, post_activity } from "../../api_request";
 
-import { globalContext } from "../contexts/global_context";
-import { useModal } from "../contexts/component_context";
+import { globalContext } from "../../contexts/global_context";
+import { useModal } from "../../contexts/component_context";
 
 import "../css/user_profile_page.css";
 

@@ -1,7 +1,7 @@
 import React, { useEffect, useContext } from "react";
 import { adminContext } from "../../../contexts/admin_context";
 import { ComponentContext } from "../../../contexts/component_context";
-import { delete_user_profile_data, post_activity } from "../../../api_request";
+import { delete_user_profile_data, post_activity } from "../../../helpers/api_request";
 
 import MUITable from "@material-ui/core/Table";
 import { TableBody, TableRow, TableCell, TableHead } from "@material-ui/core";

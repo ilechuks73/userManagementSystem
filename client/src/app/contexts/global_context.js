@@ -1,6 +1,6 @@
 import { createContext, useReducer, useEffect } from "react";
 
-import { get_profile_data } from "../api_request";
+import { get_profile_data } from "../helpers/api_request";
 
 export const globalContext = createContext();
 
