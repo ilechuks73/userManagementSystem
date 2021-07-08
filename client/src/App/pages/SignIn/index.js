@@ -1,24 +1,23 @@
 import React, { useEffect, useState, useContext } from "react";
 import { useHistory } from "react-router-dom";
-import "../css/login_page.css";
-import { globalContext } from "../contexts/global_context";
+import "../../css/login_page.css";
+import { globalContext } from "../../contexts/globalContext";
 
-import { login_validation, get_profile_data } from "../api_request";
-import { useLoader } from "../helpers/custom_hooks";
-const LoginPage = () => {
+import { login_validation } from "../../helpers/apiRequests";
+import { useLoader } from "../../helpers/customHooks";
+const SignIn = () => {
  const history = useHistory();
 
- const show_loader = useLoader(true);
- const hide_loader = useLoader(false);
+ const { hideLoader, showLoader } = useLoader();
  useEffect(() => {
-  hide_loader();
+  hideLoader();
 
   return () => {
-   show_loader();
+   showLoader();
   };
  }, []);
 
- const { set_auth, set_profile_data } = useContext(globalContext);
+ const { set_auth } = useContext(globalContext);
 
  const [pass_visibility, set_pass_visibility] = useState(false);
  const [login_data, set_login_data] = useState({});
@@ -93,7 +92,7 @@ const LoginPage = () => {
      <button
       className="signup_btn btn"
       onClick={() => {
-       history.push("/register");
+       history.push("/signup");
       }}
      >
       SIGN UP
@@ -104,4 +103,4 @@ const LoginPage = () => {
  );
 };
 
-export default LoginPage;
+export default SignIn;

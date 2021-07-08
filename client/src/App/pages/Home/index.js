@@ -1,14 +1,11 @@
-import React, { useContext } from "react";
+import React from "react";
 import { useHistory } from "react-router-dom";
-import "../css/home_page.css";
-import { ComponentContext } from "../contexts/component_context";
-import { useLoader } from "../helpers/custom_hooks";
-import io from "socketio-client"
+import "../../css/home_page.css";
+import { useLoader } from "../../helpers/customHooks";
 
-const HomePage = () => {
+const Home = () => {
  const history = useHistory();
- const hideLoader = useLoader(false);
- const showLoader = useLoader(true);
+ const {hideLoader, showLoader} = useLoader();
  React.useEffect(() => {
   hideLoader();
 
@@ -23,11 +20,11 @@ const HomePage = () => {
     <h1 className="pb-5">User Management System</h1>
 
     <div className="pb-5 col-md-7 d-flex justify-content-around">
-     <button className="px-3 py-2" onClick={() => history.push("/login")}>
+     <button className="px-3 py-2" onClick={() => history.push("/signin")}>
       Go To Login
      </button>
 
-     <button className="px-3 py-2" onClick={() => history.push("/register")}>
+     <button className="px-3 py-2" onClick={() => history.push("/signup")}>
       Register User
      </button>
 
@@ -43,4 +40,4 @@ const HomePage = () => {
  );
 };
 
-export default HomePage;
+export default Home;

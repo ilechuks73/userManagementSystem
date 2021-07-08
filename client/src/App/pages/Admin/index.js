@@ -1,8 +1,8 @@
 import React, { useState, useEffect, useContext } from "react";
 import { useHistory } from "react-router-dom";
 
-import { globalContext } from "../../contexts/global_context";
-import { ComponentContext } from "../../contexts/component_context";
+import { globalContext } from "../../contexts/globalContext";
+import { ComponentContext } from "../../contexts/componentContext";
 
 import Overview from "./components/overview";
 import Users from "./components/users";

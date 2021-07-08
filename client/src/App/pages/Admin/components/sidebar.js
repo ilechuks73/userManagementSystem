@@ -1,7 +1,7 @@
 import React,{useContext} from "react";
 import { useHistory } from "react-router-dom";
 
-import {ComponentContext} from '../../../contexts/component_context'
+import {ComponentContext} from '../../../contexts/componentContext'
 
 import clsx from "clsx";
 import { makeStyles, useTheme } from "@material-ui/core/styles";

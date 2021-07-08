@@ -1,5 +1,5 @@
 import React, {useContext} from 'react'
-import { adminContext } from '../../../contexts/admin_context'
+import { adminContext } from '../../../contexts/adminContext'
 
 
 const AdminAccessControl = () => {

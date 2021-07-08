@@ -1,5 +1,5 @@
 import React from "react";
-import { useLoader } from "../../../helpers/custom_hooks";
+import { useLoader } from "../../../helpers/customHooks";
 
 const Documentation = () => {
  const [state, set_state] = React.useState(false);

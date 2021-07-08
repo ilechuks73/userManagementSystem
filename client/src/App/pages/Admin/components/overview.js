@@ -8,7 +8,7 @@ import Grid from "@material-ui/core/Grid";
 import AccountBoxIcon from "@material-ui/icons/AccountBox";
 import MessageIcon from "@material-ui/icons/Message";
 import SecurityIcon from "@material-ui/icons/Security";
-import { adminContext } from "../../../contexts/admin_context";
+import { adminContext } from "../../../contexts/adminContext";
 
 import { Time } from "../../../helpers/time";
 

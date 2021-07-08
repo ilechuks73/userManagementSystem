@@ -1,6 +1,6 @@
 import React, { useContext } from "react";
 import "../css/modal.css";
-import { ComponentContext } from "../contexts/component_context";
+import { ComponentContext } from "../contexts/componentContext";
 
 import { makeStyles } from "@material-ui/core/styles";
 import MiuiModal from "@material-ui/core/Modal";

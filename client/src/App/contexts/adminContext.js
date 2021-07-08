@@ -1,12 +1,12 @@
 import { createContext, useEffect, useReducer } from "react";
 //DEVELOPMENTAL IMPORTS--------------
-import { get_activities, get_users, get_admins } from "../../api_request";
+import { get_activities, get_users, get_admins } from "../helpers/apiRequests";
 //----------------
 export const adminContext = createContext();
 
 export const AdminStore = (props) => {
   useEffect(() => {
-    //--------------------GET ALL ACTIVITIES FROM API-------------------------------
+    //GET ALL ACTIVITIES FROM API
 
     get_activities().then((data) => {
       set_activity({
